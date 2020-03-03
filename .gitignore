@@ -4,3 +4,5 @@ node_modules
 package-lock.json
 package.json
 webpack.config.json
+public/dist/bundle.js
+db/db.js
