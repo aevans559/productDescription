@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
+// import ProductHeading from './ProductHeading.jsx';
+import RatingsComponent from './RatingsComponent.jsx';
+import InfoComponent from './InfoComponent.jsx';
+import NewerModel from './NewerModel.jsx';
+import AdComponent from './AdComponent.jsx';
+
 export default class ProductDescription extends Component {
     constructor(props) {
         super(props)
@@ -46,23 +52,21 @@ export default class ProductDescription extends Component {
             this.state.size = product.size
         })
             return (
-                <div>
-                    {this.state.name}
-                    <br/>
-                    by: {this.state.vendor}
-                    <br/>
-                    <img src={this.state.url} style={{maxWidth: 649, maxHeight: 499}}/>
-                    <br/>
-                    Price: ${this.state.price}
-                    <br/>
-                    Description: {this.state.description}
-                    <br/>
-                    Category: {this.state.category}
-                    <br/>
-                    Rating: {this.state.stars}
-                    <br/>
-                    Size: {this.state.size}
+                <div className="ProductDescription">
+                    <RatingsComponent />
+                    <InfoComponent />
+                    <NewerModel />
+                    <AdComponent />
                 </div>
         )
     }
 }
+
+
+
+/* <ProductHeading
+    category={this.state.category}
+    name={this.state.name}
+    vendor={this.state.vendor}
+    url={this.state.url}
+/> */
