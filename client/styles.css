@@ -6,6 +6,10 @@
     width: 50%
 }
 
+/* --- Temp Search Dropdown --- */
+
+
+
 
 
 /* --- Product Rating Component --- */
@@ -357,6 +361,7 @@ div.InfoComponent {
 .report:hover {
     color: #ff6600;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* --- Newer Model Component --- */

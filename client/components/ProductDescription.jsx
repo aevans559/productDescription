@@ -6,6 +6,7 @@ import RatingsComponent from './RatingsComponent.jsx';
 import InfoComponent from './InfoComponent.jsx';
 import NewerModel from './NewerModel.jsx';
 import AdComponent from './AdComponent.jsx';
+// import AutoCompleteText from './AutoCompleteText.jsx';
 
 export default class ProductDescription extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ export default class ProductDescription extends Component {
             stars: 0,
             size: ''
         }
-        // this.getAllProducts = this.getAllProducts.bind(this);
+        // this.handleChange = this.handleChange.bind(this);
     }
 
     // when component mounts all products in db are available in our state products array
@@ -29,14 +30,14 @@ export default class ProductDescription extends Component {
         axios.get('/products')
             .then(res => {
                 this.setState({products: res.data})
-                // return res.json()
+                // console.log(this.state.products)
             })
-            // .then(products => {
-            // })
             .catch((err) => {
                 console.log(err)
             })
     }
+
+
 
 
     render() {
@@ -52,12 +53,20 @@ export default class ProductDescription extends Component {
             this.state.size = product.size
         })
             return (
+                <>
+                {/* this will get deleted vvv */}
+                {/* <div className="App-content">
+                    <AutoCompleteText products={this.state.products}/>
+                </div> */}
+                {/* this will get deleted ^^^ */}
+
                 <div className="ProductDescription">
-                    <RatingsComponent />
+                    <RatingsComponent products={this.state.products}/>
                     <InfoComponent />
                     <NewerModel />
                     <AdComponent />
                 </div>
+                </>
         )
     }
 }
