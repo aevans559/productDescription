@@ -52,6 +52,8 @@ export default class ProductDescription extends Component {
             this.state.stars = product.stars
             this.state.size = product.size
         })
+
+        console.log(this.state.products)
             return (
                 <>
                 {/* this will get deleted vvv */}
@@ -60,12 +62,12 @@ export default class ProductDescription extends Component {
                 </div> */}
                 {/* this will get deleted ^^^ */}
 
-                <div className="ProductDescription">
-                    <RatingsComponent products={this.state.products}/>
-                    <InfoComponent />
-                    <NewerModel />
-                    <AdComponent />
-                </div>
+                    <div className="ae-ProductDescription">
+                        <RatingsComponent category={this.state.category}/>
+                        <InfoComponent />
+                        <NewerModel />
+                        <AdComponent />
+                    </div>
                 </>
         )
     }

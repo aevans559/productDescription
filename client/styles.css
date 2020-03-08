@@ -1,9 +1,9 @@
 /* --- Product Description App --- */
 
-.ProductDescription {
+.ae-ProductDescription {
     display: grid;
     grid-template-rows: 0.10fr 0.40fr 0.25fr 0.25fr;
-    width: 50%
+    width: 95%;
 }
 
 /* --- Temp Search Dropdown --- */
@@ -14,57 +14,57 @@
 
 /* --- Product Rating Component --- */
 
-.ratings-headline {
+.ae-ratings-headline {
     display: inline-block
 }
 
-.ratings-count {
+.ae-ratings-count {
     margin-left: 35px;
 }
 
-.ratings-count:link, .q-count:link {
+.ae-ratings-count:link, .ae-q-count:link {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
     text-decoration: none
 }
 
-.ratings-count:visited, .q-count:visited, .badgeCat:visited {
+.ae-ratings-count:visited, .ae-q-count:visited, .ae-badgeCat:visited {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
     text-decoration: none
 }
 
-.ratings-count:hover, .q-count:hover, .badgeCat:hover {
+.ae-ratings-count:hover, .ae-q-count:hover, .ae-badgeCat:hover {
     color: #ff6600;
     text-decoration: underline;
 }
 
-.ratingsPipe {
+.ae-ratingsPipe {
     font-size: 16px;
     padding: 0px 5px
 }
 
-.badgeLine {
+.ae-badgeLine {
     display: grid;
     grid-template-columns: 100px 150px;
     margin-bottom: 6px;
 }
 
-.badgeCat {
+.ae-badgeCat {
     margin-left: 10px;
     text-decoration: none
 }
 
-.badgeCat:link {
+.ae-badgeCat:link {
     margin-top: 3px;
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
 }
 
-.badgeImage {
+.ae-badgeImage {
     width: 100px;
     height: 25px;
     background-image: url('../images/amazon-badge.png');
@@ -72,42 +72,42 @@
     background-size: 100%;
 }
 
-.stars {
+.ae-stars {
     margin-left: 5px;
 }
 
-div.RatingsComponent, div.InfoComponent, div.NewerModelComponent {
+div.ae-RatingsComponent, div.ae-InfoComponent, div.ae-NewerModelComponent {
     border-bottom: lightgrey solid 1px;
 }
 
 
 /* --- Product Heading Component --- */
 
-div.InfoComponent {
+div.ae-InfoComponent {
     margin-top: 10px;
 }
 
-.list-price {
+.ae-list-price {
     margin-bottom: 2px;
 }
 
-.list-price, .real-price, .you-save {
+.ae-list-price, .ae-real-price, .ae-you-save {
     color: #555;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px
 }
 
-.list-price-price {
+.ae-list-price-price {
     text-decoration-line: line-through;
     display: inline-block;
     margin-left: 5px;
 }
 
-.real-price {
+.ae-real-price {
     margin-left: 29px;
 }
 
-.real-price-price {
+.ae-real-price-price {
     color: firebrick;
     font-size: 18px;
     display: inline-block;
@@ -115,24 +115,24 @@ div.InfoComponent {
     margin-right: 5px;
 }
 
-.free-ship {
+.ae-free-ship {
     margin-left: 3px;
     margin-right: 3px;
 }
 
-.ship-deal {
+.ae-ship-deal {
     display: inline-block;
     color: #111111;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
 }
 
-.details-returns {
+.ae-details-returns {
     margin-top: 2px;
     margin-left: 47px;
 }
 
-.details, .returns, .details:visited, .returns:visited {
+.ae-details, .ae-returns, .ae-details:visited, .ae-returns:visited {
     display: inline-block;
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
@@ -140,48 +140,48 @@ div.InfoComponent {
     text-decoration: none;
 }
 
-.details:link, .returns:link {
+.ae-details:link, .ae-returns:link {
     display: inline-block;
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
 }
 
-.details:hover, .returns:hover {
+.ae-details:hover, .ae-returns:hover {
     color: #ff6600;
     text-decoration: none;
 }
 
-.you-save {
+.ae-you-save {
     margin-top: 3px;
     margin-bottom: 5px;
 }
 
-.savings-amount {
+.ae-savings-amount {
     display: inline-block;
     margin-left: 5px;
     color: firebrick;
     font-size: 13px
 }
 
-.discount {
+.ae-discount {
     margin-top: 6px;
     margin-bottom: 6px;
 }
 
-.discount:link, .discount:visited {
+.ae-discount:link, .ae-discount:visited {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
     text-decoration: none
 }
 
-.discount:hover {
+.ae-discount:hover {
     color: #ff6600;
     text-decoration: underline;
 }
 
-.note {
+.ae-note {
     color: #111111;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
@@ -189,13 +189,13 @@ div.InfoComponent {
     margin-bottom: 6px;
 }
 
-.note-message {
+.ae-note-message {
     display: inline-block;
 }
 
 /* --- Dropdown Button --- */
 
-.dropbtn {
+.ae-dropbtn {
     background-color: white;
     padding: 16px;
     font-size: 13px;
@@ -205,18 +205,18 @@ div.InfoComponent {
     text-decoration: none
 }
 
-.dropbtn:hover {
+.ae-dropbtn:hover {
     color: #ff6600;
     text-decoration: none;
     cursor: pointer;
 }
 
-.dropdown {
+.ae-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.ae-dropdown-content {
     display: none;
     position: absolute;
     padding: 12px 16px;
@@ -230,7 +230,7 @@ div.InfoComponent {
     z-index: 1;
 }
 
-.dropdown-content a {
+.ae-dropdown-content a {
     color: #0066C0;
     padding: 12px 16px;
     text-decoration: none;
@@ -239,28 +239,28 @@ div.InfoComponent {
     text-decoration: none
 }
 
-.dropdown-content a:hover {
+.ae-dropdown-content a:hover {
     color: #ff6600;
     text-decoration: underline;
 }
 
-.dropdown:hover .dropdown-content {
+.ae-dropdown:hover .ae-dropdown-content {
     display: block;
 }
 
-.dropdown-content:hover .dropbtn {
+.ae-dropdown-content:hover .ae-dropbtn {
     background-color: white;
 }
 
 /* ------- */
 
-.color-option {
+.ae-color-option {
     color: #555;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px
 }
 
-.color-name {
+.ae-color-name {
     display: inline-block;
     color: #111111;
     font-family: "Amazon Ember", Arial, sans-serif;
@@ -269,19 +269,19 @@ div.InfoComponent {
 
 /* --- Image List --- */
 
-.img-list {
+.ae-img-list {
     list-style-type: none;
     margin-left: -45px;
 }
 
-.img-list:before {
+.ae-img-list:before {
     display: table;
     content: "";
     line-height: 0;
     font-size: 0;
 }
 
-.img-list:after {
+.ae-img-list:after {
     clear: none;
     display: table;
     content: "";
@@ -289,7 +289,7 @@ div.InfoComponent {
     font-size: 0;
 }
 
-.img-item {
+.ae-img-item {
     height: 36px;
     width: 36px;
     display: inline-block;
@@ -298,47 +298,47 @@ div.InfoComponent {
     margin-right: 5px;
 }
 
-.img-item:hover {
+.ae-img-item:hover {
     border: solid 1px #ff6600;
 }
 
 /* ------ */
 
-.desc-bullets {
+.ae-desc-bullets {
     margin-left: -22px;
 }
 
-.bullet {
+.ae-bullet {
     margin-top: 3px;
     color: #111111;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
 }
 
-.new-used {
+.ae-new-used {
     color: #111111;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
 }
 
-.new-used a {
+.ae-new-used a {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
     text-decoration: none
 }
 
-.new-used a:hover {
+.ae-new-used a:hover {
     color: #ff6600;
     text-decoration: underline;
 }
 
-.used-price {
+.ae-used-price {
     display: inline-block;
     color: firebrick;
 }
 
-.speech-icon {
+.ae-speech-icon {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAYAAABx290PAAAA20lEQVQ4y2Ngzj7oxZF96BVD2oH/hDBIHUg9AxCciGL2OhbF8epIKMN/QhikDqQepI8BZMjWy2//EwO2XHoLthSkD2TIu3NbidL37uwWsKVgC0EuJwWAfQsEIJeTAkDqRy0cJhaCUh0o9ZGVSoGpj+RUijsfHvzXsePxb7iviMyHR0MZ/j3Z0PEb5iuMfIgTZByTBlpwLWHBje+wYCQGHAtlkD4ezXHt9rSE74h4IxaUXORmyzq0nRQLQeBiLAP3sUi27aRbCAIN/5lEi4/OJ1Xb/wYGplPJohj6AGLXLKmrpibWAAAAAElFTkSuQmCC);
     display: inline-block;
     position: relative;
@@ -349,7 +349,7 @@ div.InfoComponent {
     margin-right: 1px;
 }
 
-.report {
+.ae-report {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
@@ -358,7 +358,7 @@ div.InfoComponent {
     margin-bottom: 10px;
 }
 
-.report:hover {
+.ae-report:hover {
     color: #ff6600;
     text-decoration: underline;
     cursor: pointer;
@@ -366,19 +366,19 @@ div.InfoComponent {
 
 /* --- Newer Model Component --- */
 
-.newer-model-info {
+.ae-newer-model-info {
     display: grid;
     grid-template-columns: 0.08fr 0.92fr;
     grid-template-rows: 1fr;
     margin-bottom: 10px;
 }
 
-.newer-model-title {
+.ae-newer-model-title {
     font-family: "Amazon Ember", Arial, sans-serif;
     margin-bottom: -15px;
 }
 
-.newer-model-image {
+.ae-newer-model-image {
     width: 70px;
     height: 110px;
     max-width: 100%;
@@ -387,19 +387,19 @@ div.InfoComponent {
     background-size: 100%;
 }
 
-.newer-model-link {
+.ae-newer-model-link {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
 
-.newer-model-link:hover {
+.ae-newer-model-link:hover {
     color: #ff6600;
     text-decoration: underline;
 }
 
-.newer-model-price {
+.ae-newer-model-price {
     color: firebrick;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
@@ -407,7 +407,7 @@ div.InfoComponent {
     margin-bottom: 3px;
 }
 
-.stock-status {
+.ae-stock-status {
     color: green;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
@@ -415,7 +415,7 @@ div.InfoComponent {
 
 /* --- Ad Component --- */
 
-.ad-component-info {
+.ae-ad-component-info {
     margin-top: 15px;
     display: grid;
     grid-template-columns: 0.12fr 0.88fr;
@@ -425,20 +425,20 @@ div.InfoComponent {
     font-size: 13px;
 }
 
-.ad-component-info a {
+.ae-ad-component-info a {
     color: #0066C0;
     font-family: "Amazon Ember", Arial, sans-serif;
     font-size: 13px;
     text-decoration: none;
 }
 
-.ad-component-info a:hover {
+.ae-ad-component-info a:hover {
     color: #ff6600;
     text-decoration: underline;
     cursor: pointer;
 }
 
-#ad-msg {
+#ae-ad-msg {
     margin-top: 5px;
 }
 
